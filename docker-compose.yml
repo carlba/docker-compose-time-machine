@@ -14,4 +14,4 @@ timemachine:
     - 548:548/tcp
   restart: unless-stopped
   volumes:
-    - /storage/backup/timemachine:/timemachine
+    - /storage/00backup/timemachine:/timemachine
