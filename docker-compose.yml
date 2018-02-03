@@ -3,7 +3,6 @@ timemachine:
   container_name: timemachine
   environment:
     - AVAHI=1
-    - DEBIAN_FRONTEND=newt
   net: host
   ports:
     - 548:548/tcp
