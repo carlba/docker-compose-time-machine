@@ -1,12 +1,16 @@
 timemachine:
-  image: unxmaal/netatalk:latest
+  command:
+    - /entrypoint.sh
   container_name: timemachine
   environment:
-    - AVAHI=1
-  net: host
+    - AFP_LOGIN=cada
+    - AFP_PASSWORD=secret
+    - AFP_NAME=Time Machine
+  hostname: timemachine
+  image: odarriba/timemachine
   ports:
+    - 636:636/tcp
     - 548:548/tcp
-  restart: always
+  restart: unless-stopped
   volumes:
-    - /storage/backup/timemachine:/media/timemachine
-    - /storage/backup/share:/media/share
+    - /storage/backup/timemachine:/timemachine
