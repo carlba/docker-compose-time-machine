@@ -6,6 +6,7 @@ timemachine:
     - AFP_LOGIN=cada
     - AFP_PASSWORD=secret
     - AFP_NAME=TimeMachine
+    - AFP_SIZE_LIMIT=1000
   hostname: timemachine
   image: odarriba/timemachine
   ports:
