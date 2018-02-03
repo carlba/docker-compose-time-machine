@@ -7,3 +7,6 @@ timemachine:
   ports:
     - 548:548/tcp
   restart: always
+  volumes:
+    - /storage/backup/timemachine:/media/timemachine
+    - /storage/backup/share:/media/share
