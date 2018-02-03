@@ -1,5 +1,5 @@
 timemachine:
-  image: cptactionhank/netatalk:latest
+  image: unxmaal/netatalk:latest
   container_name: timemachine
   environment:
     - AVAHI=1
